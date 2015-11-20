@@ -1,0 +1,3 @@
+/*! jiemian 2015-04-02 */
+$.fn.stickyfloat=function(a){function b(){var a=0;return"undefined"!=typeof window.pageYOffset?a=window.pageYOffset:"undefined"!=typeof document.compatMode&&"BackCompat"!=document.compatMode?a=document.documentElement.scrollTop:"undefined"!=typeof document.body&&(a=document.body.scrollTop),a}var c,d=this,e=parseInt(d.parent().css("padding-top"))+parseInt(d.parent().css("padding-bottom")),f=$.extend({duration:200,startOffset:62},a);$(window).scroll(function(){d.stop(),clearInterval(c);var a=b(),g=d.parent().height()+e,h=d.parent().offset().top,i=a-parseInt(h)+f.startOffset;$(window).scrollTop()<h-f.startOffset&&(i=0),a<g+h-d.height()&&d.css({top:i})})};
+/*! jiemian 最后修改于： 2015-04-02 */

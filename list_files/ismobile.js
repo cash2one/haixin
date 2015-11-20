@@ -1,0 +1,3 @@
+/*! jiemian 2015-04-02 */
+function getUrlParam(a){var b=new RegExp("(^|&)"+a+"=([^&]*)(&|$)"),c=window.location.search.substr(1).match(b);return null!=c?unescape(c[2]):null}var webParam=getUrlParam("web"),mobile_url="m.jiemian.com",type=navigator.userAgent.match(/(Mobile|Android|iPhone)/)?!0:!1;if(type){var referrer=document.referrer;1!=webParam&&"-1"==referrer.indexOf(mobile_url)||null!=jQuery.cookie("web")||jQuery.cookie("web",1,0);var host=document.location.host,cur_url=document.location.href,mobile_url=cur_url.replace(host,mobile_url),web=jQuery.cookie("web");null==web&&(document.location.href=mobile_url)}
+/*! jiemian 最后修改于： 2015-04-02 */
